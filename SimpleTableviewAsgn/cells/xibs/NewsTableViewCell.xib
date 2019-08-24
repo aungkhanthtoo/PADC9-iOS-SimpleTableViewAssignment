@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="164" id="KGk-i7-Jjw" customClass="NewsTableViewCell" customModule="SimpleTableviewAsgn" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="391" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="391" height="144.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vET-ic-atp">
+                        <rect key="frame" x="0.0" y="14" width="391" height="128.5"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ted_talk_placeholder" translatesAutoresizingMaskIntoConstraints="NO" id="0iO-O9-ygy">
+                                <rect key="frame" x="16" y="14" width="160" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="bEY-rz-wuq"/>
+                                    <constraint firstAttribute="height" constant="100" id="c9M-Ji-ioV"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="G50-u8-aTU">
+                                <rect key="frame" x="192" y="14" width="183" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Saf-Uk-xP8">
+                                <rect key="frame" x="192" y="51" width="183" height="27.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0iO-O9-ygy" secondAttribute="bottom" constant="14.5" id="6IZ-k1-f6r"/>
+                            <constraint firstItem="G50-u8-aTU" firstAttribute="leading" secondItem="0iO-O9-ygy" secondAttribute="trailing" constant="16" id="9pf-iw-nbe"/>
+                            <constraint firstItem="0iO-O9-ygy" firstAttribute="top" secondItem="vET-ic-atp" secondAttribute="top" constant="14" id="Ivv-Cj-bbu"/>
+                            <constraint firstAttribute="trailing" secondItem="G50-u8-aTU" secondAttribute="trailing" constant="16" id="TVK-9k-RVY"/>
+                            <constraint firstItem="Saf-Uk-xP8" firstAttribute="leading" secondItem="G50-u8-aTU" secondAttribute="leading" id="Ykq-Dz-9Ws"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="Saf-Uk-xP8" secondAttribute="bottom" constant="50" id="lhx-JI-Eck"/>
+                            <constraint firstItem="0iO-O9-ygy" firstAttribute="leading" secondItem="vET-ic-atp" secondAttribute="leading" constant="16" id="oJU-mp-OwS"/>
+                            <constraint firstItem="G50-u8-aTU" firstAttribute="top" secondItem="0iO-O9-ygy" secondAttribute="top" id="seL-KW-FM4"/>
+                            <constraint firstItem="Saf-Uk-xP8" firstAttribute="top" secondItem="G50-u8-aTU" secondAttribute="bottom" constant="16" id="t4e-J4-RCL"/>
+                            <constraint firstItem="Saf-Uk-xP8" firstAttribute="trailing" secondItem="G50-u8-aTU" secondAttribute="trailing" id="xBw-Hz-F53"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vET-ic-atp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="KUw-by-fQK"/>
+                    <constraint firstAttribute="trailing" secondItem="vET-ic-atp" secondAttribute="trailing" id="SC3-VR-Hzt"/>
+                    <constraint firstAttribute="bottom" secondItem="vET-ic-atp" secondAttribute="bottom" constant="2" id="T0h-d1-zIZ"/>
+                    <constraint firstItem="vET-ic-atp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="14" id="YjJ-wl-xZM"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lblAuthor" destination="G50-u8-aTU" id="daD-HS-zlu"/>
+                <outlet property="lblTitle" destination="Saf-Uk-xP8" id="yzo-3l-mha"/>
+            </connections>
+            <point key="canvasLocation" x="99.275362318840592" y="75"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ted_talk_placeholder" width="320" height="180"/>
+    </resources>
+</document>
